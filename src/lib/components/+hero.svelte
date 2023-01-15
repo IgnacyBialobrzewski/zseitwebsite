@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
     import icon_userconfirm from "$lib/assets/icon_userconfirm.png"
     import { fly } from "svelte/transition"
     
-    let loadTransition = false
+    let loadTransition: boolean
 
     setTimeout(() => loadTransition = true)
 </script>

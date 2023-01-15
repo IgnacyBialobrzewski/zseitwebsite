@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
     import icon_navbar from "$lib/assets/icon_navbar.png"
     import { slide, fly } from "svelte/transition"
 
-    let dropdownDisplay = "hidden"
+    let dropdownDisplay: "hidden" | "block" = "hidden"
 
     const navbarEntries = [
         { text: "E-Dziennik", href: "https://edukacja.olsztyn.eu/" },  
@@ -34,7 +34,7 @@
 </nav>
 <nav>
     {#if dropdownDisplay == "block"}        
-        <ul class="lg:hidden {dropdownDisplay} list-disc bg-blue-50 p-4 border-b border-neutral-400" transition:slide={{y: 100}}>
+        <ul class="lg:hidden {dropdownDisplay} list-disc bg-blue-50 p-4 border-b border-neutral-400" transition:slide>
             {#each navbarEntries as { text, href }, i}
                 <li class="inline-block text-xl w-full" transition:fly={{x: -100, delay: 40 * i}}><a class="hover:text-blue-500 font-medium" {href}>{text}</a></li>
             {/each}

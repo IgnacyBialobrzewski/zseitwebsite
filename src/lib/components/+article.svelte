@@ -1,9 +1,9 @@
-<script>
+<script lang="ts">
     import hero_image from "$lib/assets/hero.jpg"
     import { onMount } from "svelte"
 
-    let articleVisible
-    let article
+    let articleVisible: boolean
+    let article: Element
 
     onMount(() => {
         const observer = new IntersectionObserver((entries) => {

@@ -1,6 +1,6 @@
 <script>
-    import Article from "../components/+article.svelte"
-    import Hero from "../components/+hero.svelte"
+    import Article from "$lib/components/+article.svelte"
+    import Hero from "$lib/components/+hero.svelte"
 </script>
 
 <div class="flex-1 w-screen">
