@@ -10,7 +10,7 @@
 <div class="bg-hero-image h-[55vh] bg-no-repeat bg-cover flex justify-center items-center">
     {#if loadTransition}
         <div class="flex flex-col gap-3 justify-center items-center sm:items-start p-14">
-            <h1 class="text-4xl sm:text-6xl text-center sm:text-left text-white" transition:fly={{x: -200, delay: 0}}>Elektronik</h1>
+            <h1 class="text-4xl sm:text-6xl text-center sm:text-left text-white" transition:fly={{x: -200, delay: 0}}>Technikum nr. 6</h1>
             <span class="inline-block text-sm text-center sm:text-left lg:text-xl w-1/1 lg:w-3/6 text-white" transition:fly={{x: -200, delay: 100}}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Aliquam ullamcorper metus non condimentum fermentum.
